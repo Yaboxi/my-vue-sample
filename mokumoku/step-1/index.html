@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="app" class="container">
+    <h2>{{ title }}</h2>
+    <input v-model="length" placeholder="文字数" type="text" class="form-control">
+    <button v-on:click="showText" class="button" type="button">テキスト生成</button>
+    <div class="substr">
+        {{ substr }}
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
