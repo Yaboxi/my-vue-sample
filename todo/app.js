@@ -1,6 +1,6 @@
 var data = {
-  items: [{ text: 'buy the milk', checked: true },
-					{ text: 'read a book', checked: false }],
+  items: [{ text: 'buy the milk', checked: true }, { text: 'read a book', checked: false },
+ { text: 'sell a book', checked: true }],
   title: 'My Task List',
 	newItem: ''
 };
