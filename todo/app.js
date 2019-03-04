@@ -23,6 +23,9 @@ new Vue({
     },
     deleteItem: function(idx) {
       this.items.splice(idx, 1);
+    },
+    deleteAll: function() {
+      this.items = [];
     }
   }
 });
