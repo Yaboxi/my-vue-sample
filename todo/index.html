@@ -4,7 +4,7 @@
 <body>
 <div id="app" class="container">
 	<h2>{{ title }}</h2>
-	<button v-on:click="addItem" class="btn btn-default" type="button">Add</button>
+	<button v-on:click="addItem" class="btn btn-clear" type="button">追加</button>
 	<div class="input-group">
 		<input v-model="newItem" v-on:keyup.enter="addItem" placeholder="add your task" type="text" class="form-control">
 		<!-- 
