@@ -4,9 +4,8 @@
 <body>
 <div id="app" class="container">
 	<h2><a href="./">{{ title }}</a></h2>
-	<div>
-		<p>ToDoアプリです</p>
-	</div>
+	<button id="taskAdd" v-on:click="addItem" class="btn btn-clear" type="button">追加</button>
+	<button id="deleteAllTasks" v-on:click="deleteAll" class="btn btn-clear" type="button">すべて削除</button>
 	<div class="input-group">
 		<input v-model="newItem" v-on:keyup.enter="addItem" placeholder="add your task" type="text" class="form-control">
 		<!-- 
@@ -23,8 +22,6 @@
 			</div>
 		</li>
 	</ul>
-	<button id="add" v-on:click="addItem" class="btn btn-clear" type="button">Add</button>
-	<button id="delete" v-on:click="deleteAll" class="btn btn-clear" type="button">Delete</button>
 	<h3>Link</h3>
 	<div>
 		<p>
